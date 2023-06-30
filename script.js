@@ -1,18 +1,23 @@
-function openShareModal() {
-    var modal = document.getElementById("shareModal");
-    modal.style.display = "block";
-  }
-  
-  function closeShareModal() {
-    var modal = document.getElementById("shareModal");
-    modal.style.display = "none";
-  }
-  
-  function share() {
-    var shareInput = document.getElementById("shareInput");
-    var content = shareInput.value;
-    
-    // Replace the following code with your actual share functionality
-    // For example, you can use a library or an API to handle the sharing
-    alert("Sharing content: " + content);
-  }
+const openModal = () => {
+    toggleModal("block");
+}
+
+const closeModal = () => {
+    toggleModal("none");
+}
+
+const outsideClick = (e) => {
+    if (e.target !== document.getElementById("shareModal")) {
+        console.log("click");
+        closeModal();
+    }
+}
+
+const toggleModal = (displayValue) => {
+    const shareModal = document.getElementById("shareModal");
+
+    shareModal.style.display = displayValue;
+    shareModal.addEventListener("click", openModal);
+    shareModal.addEventListener("click", outsideClick);
+    shareModal.addEventListener("click", closeModal);
+}
