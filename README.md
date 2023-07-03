@@ -5,9 +5,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Solution URL: [https://github.com/agomez99/ArticlePreview](https://github.com/agomez99/ArticlePreview)
+- Live Site URL: [https://agomez99.github.io/ArticlePreview/](https://agomez99.github.io/ArticlePreview/)
 ## My process
 
 ### Built with
