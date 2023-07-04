@@ -17,6 +17,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - CSS Grid
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@agomez99](https://www.frontendmentor.io/profile/agomez99)
 
 
