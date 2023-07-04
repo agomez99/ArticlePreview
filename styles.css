@@ -95,24 +95,43 @@ main {
   display: none;
   position: fixed;
   z-index: 1;
-  right:300px;
-  top:430px;
+  right:210px;
+  top:450px;
   width: 300px;
   height:50px;
 }
 
 .modalContent {
   background-color:hsl(217, 19%, 35%);
-  margin: 10% auto;
-  padding: 8px;
+  padding:5px;
   border: 1px solid #888;
-  width: 100%;
   color:white;
   border-radius: 15px;
   display: flex;
   font-family: 'Manrope', sans-serif;
   font-weight: 100;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.modalContent:after {
+  content: '';
+  position: absolute;
+  bottom: -18%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: hsl(217, 19%, 35%);
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+.sharetxt{
+  font-family: 'Manrope', sans-serif;
+  color:hsl(218, 9%, 65%);
+  margin-left: auto;
 }
 
 .close {
@@ -151,35 +170,43 @@ main {
     border-radius: 15px 15px 0px 0px;
   
   }
+  .right-container{
+    width:auto;
+  }
   
 .popup-modal {
   display: none;
-  position: fixed;
   z-index: 1;
   right:0px;
-  top:580px;
+  top:540px;
   width:100%;
+  height:15%;
 }
 
 .modalContent {
   background-color:hsl(217, 19%, 35%);  margin: 10% auto;
   padding: 8px;
   border: 1px solid #888;
-  width:100%;
-  height:80px;
-
+  width:auto;
+  height:100%;
   color:white;
   border-radius: 0px 0px 15px 15px;
   display: flex;
+  margin-right: 3%;
+  margin-left: 3%;
 
 }
+.modalContent:after {
+display: none;
+}
+
 
 .close {
   color: #aaa;
-  float: right;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   margin-left: auto;
+  margin-bottom: auto;
 }
 
 .close:hover,
